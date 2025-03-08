@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"><style>body{;background-repeat:no-repeat;background-size:cover}img{max-width:100%;max-height:100%;max-width:20%;max-height:20%;margin-left:20%;margin: right 10px;}.m_head{text-align:center;font-size:300%;border-radius:9px}.m_backg{background:linear-gradient(90deg,#e959df 28%,#d033d0 72%)}.m_container{display:grid;column-gap:5px}table,th,td{border: 13px; solid rgb(187, 0, 242);border-collapse:collapse}</style></head>
+    <body style="background-color: rgba(252, 250, 250, 0.674);"><u></u>
+    <div>
+        <div class="m_backg">    
+            <div class="m_container">
+                <div class="m_img">
+                </div>
+                <div class="m_head">
+        <font size="6" color="rgb(10,250,10)"> <I>REGISTRATION FORM</I></font>
+                </div>
+            </div>
+        </div>
+        <fieldset>
+            <legend><h4><font size="6" color="rgb(187,0,244)">REGISTRATION FORM</font></h4></legend>
+            <font size="4" color="rgb(187,0,242)">
+                <form onsubmit="return validateForm()">
+                <label for="userId">User ID:</label>
+                <input type="text" id="userId" name="userId">
+                  <br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                 <br><br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                 <br><br>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address">
+                 <br><br>
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country">
+                 <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                 <br><br>
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male"> Male
+                <input type="radio" id="female" name="gender" value="female"> Female
+                 <br><br>
+                <label for="language">Language:</label>
+                <select id="language" name="language">
+                    <option value="english">English</option>
+                    <option value="non-english">Non-English</option>
+                </select>
+        
+                <br><br>
+                <button type="submit">Submit</button>
+            </form>
+            <script>
+                function validateForm() {
+                    var userId = document.getElementById('userId').value;
+                    var password = document.getElementById('password').value;
+                    var name = document.getElementById('name').value;
+                    var address = document.getElementById('address').value;
+                    var country = document.getElementById('country').value;
+                    var email = document.getElementById('email').value;
+                    var gender = document.querySelector('input[name="gender"]:checked');
+                    var language = document.getElementById('language').value;
+        
+                    var errorElement = document.getElementById('error-message');
+                    errorElement.innerHTML = '';
+        
+                    if (!userId || !password || !name || !address || !country || !email || !gender || !language) {
+                        errorElement.innerHTML = 'All fields are required.';
+                        return false;
+                    }
+        
+                    // Additional validation logic can be added here
+        
+                    return true;
+                }
+            </script>
+        </font>
+    </fieldset>
+</body>
+</html>

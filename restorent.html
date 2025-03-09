@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Name</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color:rgb(117,50,120);
+            color:  rgb(197,150,190);
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav {
+            margin-top: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: rgb(197,150,190);
+            margin: 10px;
+        }
+        .container {
+            margin: 20px;
+        }
+        h2 {
+            font-family: 'Georgia', serif;
+        }
+        table {
+            width: 100%;
+        }
+        table, th, td {
+            border: 10px solid  rgb(19, 60, 68);
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        .map {
+            width: 100%;
+            height: 300px;
+        }
+        footer {
+            background-color: #333;
+            color: rgb(197,150,190);
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body bgcolor=" #c89de6">
+    <header>
+        <h1>TEH SEVEN</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#order">Order Now</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container" id="about">
+        <h2>About Us</h2>
+        <p>Our restaurant offers the finest dining experience in the area. With a passion for great food and excellent service, we aim to please every palate.</p>
+    </div>
+
+    <div class="container" id="menu">
+        <h2>Menu</h2>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>butter chicken</td>
+                <td>Rs 350.00</td>
+            </tr>
+            <tr>
+                <td>Rogan Josh</td>
+                <td>Rs 420.00</td>
+            </tr>
+            <tr>
+                <th> Aloo Paratha</th>
+                <th>Rs 70</th>
+            </tr>
+            <tr>
+                <td>butter naan</td>
+                <td>Rs 15.00</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container" id="order">
+        <h2>Order Now</h2>
+        <form>
+            <label for="customerName">Customer Name:</label>
+            <input type="text" id="customerName" name="customerName" required><br><br>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required><br><br>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required><br><br>
+
+            <label for="menuItems">Menu Items:</label>
+            <textarea id="menuItems" name="menuItems" required></textarea><br><br>
+
+            <label for="total">Total Cost:</label>
+            <input type="text" id="total" name="total" required><br><br>
+
+            <input type="submit" value="Submit Order">
+        </form>
+    </div>
+
+    <div class="container" id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p>Address: THE SEVEN Restaurant,Dharampeat, Nagpur</p>
+            <p>Phone: (91) 1125732354</p>
+        </div>
+        <div class="map">
+        </div>
+    </div>
+    <footer>
+        <p>Shop Timing: Mon-Sun, 10:00 AM - 10:00 PM</p>
+        <p>Social Media Partners: Facebook, Twitter, Instagram</p>
+        <p>Delivery Partners: Uber Eats, swiggy, zomato</p>
+    </footer>
+</body>
+</html>
+
+
